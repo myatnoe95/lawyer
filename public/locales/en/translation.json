@@ -1,0 +1,256 @@
+{
+    "Header" : {
+        "Home": "Home" ,
+        "About Us": "About Us" ,
+        "Law Firm": "Law Firm",
+        "Law School": "Law School",
+        "News" : "News",
+        "Contact Us": "Contact Us",
+        "English" : "English",
+        "Myanmar" : "Myanmar"
+    },
+
+    "HomeComponent": {
+       "Title": "PhoePhyu & Associates",
+       "Subtitle": "is a private company limited which serves the following services.",
+       "List1": "Legal Services under the Name of Phoe Phyu & Associates Law Firm",
+       "List2": "Writing and Publication of Books concerning with Law and Legal Processing in the name of Phoe Phyu & Associates Law Book Publication",
+       "List3": "Teaching Law and it's realm by the name of Phoe Phyu School of Law"
+    },
+    
+    "PracticeArea": {
+        "Economy": "Economy",
+        "Land-disputes": "Land-disputes",
+        "Trade": "Trade"
+    },
+
+    "FounderBlog": {
+        "Founder-Title": "About Founder",
+        "Founder-para": "Phoe Phyu is a Founder and CEO of Phoe Phyu & Associates Business. He is also an Activist Lawyer and was arrested owing to taking part in 2007 Saffron Movement. After being released, he presented the case for sangha and activists of politics and human rights who were detained during saffron movement. In addition, he carried out in the movement of labour-right and farm land ownership.",
+        "Prizes-Title": "Prizes Award",
+        "Prizes-para": "Citizen of Burma Award in 2011 and 2012",
+        "Present-Title": "Studying at present",
+        "Present-para": "After being released from prison, he was banned from studying an year law master course in Dagon University of Yangon. However, he is allowed by the University Essex,UK to take L.L.M (International Trade & Commercial Law) through Kaplan."
+    },
+
+    "ActivityBlog":{
+        "Blog1":{
+            "Blog-Title":"Movement for the Rights of Land",
+            "Blog-para":"The most conspicuous is that he performed as a lawyer in case of compelling the farmers to grow “ Castor Oil Plant '' by military - weapon - factory on the farm-land ( about ten thousand area ) in natmauk township, Magwe Division. For performing it, he was sentenced to four years in prison. However, by the pressure of the International Labour Organization (ILO) on the military regime,he stayed in prison only one year and just over three months. It was judged by Full Banch of Supreme Court. While conducting this case, filing a Suit in ILO, he was able to do to return the farmland of over ten thousand areas towards peasants and farmers who are the actual owner of these lands. Besides that, at the beginning of 2014, billions of Myanmar currency for the farmland of ten thousand areas were received as a compensation. It was for the farm land seized by 16 crony-companies during military regime in 2008. While conducting this case, he was taken into Custody two times."
+        },
+        "Blog2":{
+            "Blog-Title":"Movement for Labour Rights",
+            "Blog-para":"He was executed for assisting in order to report directly to the ILO on abusing children as soldiers. During the june of 2010, after establishing the “Myanmar National Trade Union”, according to the law, he challenged the military authorities to have legal permission for its registration. In addition, he made efforts to appear the “Law of Labour Organization”.In the early period of Second Democracy Age, in myanmar history, “Tyie Worker Union” was first founded. He also advocated for having an increment in salary of factory-workers as well as security crimes in the workplace for the benefits of thousands of workers."
+        },
+        "Blog3":{
+            "Blog-Title":"Current Activities",
+            "Blog-para":"He is fulfilling to Provide free consulting for regaining farmlands of the native taken over by oligas including military authorities and crony companies under the ruling of the regime. He is making attempts to have technical support from various international organizations and institutions for conducting a case, opposing monopolized economy of ex-Generals and crony-companies and striving to get equal rights to compete in every sphere according to the law. In addition, he is composing to make an argument to the supreme court for rappelling “ The Myitsone Dam Construction Project” through Prohibition Writ."
+        },
+        "RelatedBlog":{
+            "Blog-Title": "Related Links about Phoe Phyu",
+            "Blog-para": "The following links in International Organizations’ Websites are mentioned about Phoe Phyu’s movements",
+            "List1": "ဦးဖိုးဖြူ ၊ (လူမှုအကျိုးဆောင်ရှေ့နေ) (On My Wikipedia)",
+            "List2": "BURMA: A human rights defender jailed for helping farmers over land disputes with officials(On Human Right Asia)",
+            "List3": "Myanmar’s Courts Subvert Rule of Law, Activists Say(On New York Times)"
+        }
+
+    },
+
+    "Members":{
+        "Member": {
+            "Member-Title":"About Associates",
+            "Member-info":"The advocates / Attorneys to join with Phoe Phyu & Associates in teaching law and processing. They will make part-time teaching with honorarium.Learning cost of the learner and the business management of this school are completely relevant to Phoe Phyu School of Law of Phoe Phyu & Associates Law Firm Co.,Ltd, and not to the following lawyers."
+        },
+        "Member1": {
+            "Member-Name": "U Phoe Phyu",
+            "Member-Position": "Higher Grade Platter(CEO)"
+        },
+        "Member2": {
+            "Member-Name": "Daw Nwe Nwe San",
+            "Member-Position": "Legal Researcher (Advocate)"
+        },
+        "Member3": {
+            "Member-Name": "Daw Ei Mon Thaw",
+            "Member-Position": "Legal Researcher (Advocate)"
+        },
+        "Member4": {
+            "Member-Name": "U Min Thant Zin",
+            "Member-Position": "Advocate"
+        },
+        "Member5": {
+            "Member-Name": "U Kyaw Thein",
+            "Member-Position": "Advocate"
+        },
+        "Member6": {
+            "Member-Name": "U Thet Ko Ko",
+            "Member-Position": "Advocate"
+        },
+        "Member7": {
+            "Member-Name": "U Aung Si Htun",
+            "Member-Position": "Higher Grade Platter"
+        },
+        "Member8": {
+            "Member-Name": "Daw Hnin Lei Lei Khaing",
+            "Member-Position": "Advocate"
+        },
+        "Member9": {
+            "Member-Name": "U Wai Phyo Myat",
+            "Member-Position": "Advocate"
+        },
+        "Member10": {
+            "Member-Name": "U Pyae Sone Win",
+            "Member-Position": "Higher Grade Platter"
+        },
+        "Member11": {
+            "Member-Name": "Daw Hnin Myat Swe",
+            "Member-Position": "Higher Grade Platter"
+        },
+        "Member12": {
+            "Member-Name": "Daw Hnin Htet Htet Hlaing",
+            "Member-Position": "Higher Grade Platter"
+        } 
+    },
+
+    "Mission": {
+        "Business-Title": "Law firm business",
+        "Business-para": "The Law Firm is a Legal Service Company which has made legal registration and has been running since 2007. In spite of facing various difficulties to get the permission of its registration, only in 2015 the approval has been attained. However, it had to be remake due to the change of its ownership in 2019. At the moment, Stands as a legal company limited (reg no:122263878/19.9.2019) and carries out legal services.",
+        "Vision":"Vision",
+        "Vision-para": "Every Citizen must the rights to fixed means to earn by competing freely, equally in any economy affairs which undergo by right earning.",
+        "Mission": "Mission",
+        "Mission-para": "Every citizen must have benefits according to the law in doing economy affairs and we make the citizens to practice the duties and responsibilities as prescribing in law.",
+        "Aim": "Aim & Object",
+        "Aim-para": "We must implement the rights to find means to earn equally for economy partners, entrepreneurs, and small and medium Entrepreneurs.",
+        "Conviction": "Conviction",
+        "Conviction-para": "“One who guards the Dhama is reguarded by the Dhama” May we take responsibility to have the rights to compete freely, to find means to earn equally, and legally to firm your economy affair. Let’s join Phoe Phyu & Associates Law Firm In order to legally firm your business and economy affair."
+    },
+
+    "LegalService":{
+        "Service": {
+            "Service-Title": "Legal Services",
+            "Service-info": "The Legal Services Provided by the law firm are as follows."
+        },
+        "Service1": {
+            "Service-no": "1.",
+            "Service1-Title": "Consultation",
+            "Service1-List1": " will make complete hearing of the matters to provide legal services",
+            "Service1-List2": "will make careful observation of documents dealing with contracts",
+            "Service1-List3": "will make explanation at what stage you are now",
+            "Service1-List4": "will discuss the matters about your weakness and requirements",
+            "Service1-List5": "will suggest what to do next"
+        },
+        "Service2": {
+            "Service-no": "2.",
+            "Service2-Title": " Making research & Writing Legal Plan",
+            "Service2-List1": " will make analysis on the nature and meaning of the state of affairs/ project",
+            "Service2-List2": " will make a check on it comparing with the directive of the law",
+            "Service2-List3": "(if necessary )will make analysis on ruling , directive, practice and possibilities",
+            "Service2-List4": "will suggest the legal ways to exercise ",
+            "Service2-List5": "will draw the work programme in stages to exercise according to the law, besides fix strategical programme"
+        },
+        "Service3": {
+            "Service-no": "3.",
+            "Service3-Title": " Negotiation & Mediation",
+            "Service3-List1": "will discuss the things coming out as a result in accordance with the law in order to have argument with the man cause of the dispute, and will fine solution by reconciling and co-ordinating ",
+            "Service3-List2": "will sign a bond between argument and disargument which result in to implement."
+        },
+        "Service4": {
+            "Service-no": "4.",
+            "Service4-Title": " Notice Issuing",
+            "Service4-List1": " will inform those who are disputing to come to discuss and to implement the legal rights. "
+        },
+        "Service5": {
+            "Service-no": "5.",
+            "Service5-Title": " Legal Survey on Business Projects",
+            "Service5-List1": " will do field work to the place where the affair had happened or the business / project is located",
+            "Service5-List2": " will fulfill to co-ordinate in order to obtain departmental assistance",
+            "Service5-List3": " will enquire departmental procedure",
+            "Service5-List4": " will proclaim means which should be exercised according to the law"
+        },
+        "Service6": {
+            "Service-no": "6.",
+            "Service6-Title": " Legal Advocacy",
+            "Service6-List1": " will make preparation and submission of case file, defending , inspection ,well- preparation of witness and special part- time discussion while contesting in a court."
+        },
+        "Service7": {
+            "Service-no": "7.",
+            "Service7-Title": " Legal Survey on current cases",
+            "Service7-List1": "   will make inspection the criminal events, analysis of deduction, looking into weakness or strength and suggestion on the methods in order to fulfill the requirements. "
+        },
+        "SpecialService": {
+            "SS-Title": "Special Services of the Law Firm",
+            "SS-List1": "Drawing legal plan concerning with the business",
+            "SS-List2": "Making legal research for individual business",
+            "SS-List3": "Conducting a legal survey of the links between the practice of law and the business",
+            "SS-List4": "Signing a bond concerning with economy , trade and farmland, and making amendment.",
+            "SS-List5": "Re-conciling the disputes our economy ,trade and farmland, negotiating and co-ordinating, signing an agreement bond",
+            "SS-List6": "Compiling PESTLE & SWOT Analysis in accordance with the variety of business and make known the legal trend in advance"
+        },
+        "AdditionService": {
+            "AS-Title": "Means of being able to take legal service",
+            "AS-List1": "Consulting the means in which you should do according to the law with the rate of an hour for an individual client after taking appointment.",
+            "AS-List2": "Door-to- door consulting and online consulting for those who have no spare-time to come for consulting because of any reasons such as traffic jam, self-managing the own business.",
+            "AS-List3": "Co-ordinating on behalf of somebody for individual task of trade and economy, reconciling, resigning a bond to amend, and serving as a layer.",
+            "AS-List4": "In accordance with the work requirement, hiring legal service for economy by monthly pay annually."
+        }
+    },
+
+    "AboutLawSchool": {
+        "AboutSchoolTitle": "Phoe Phyu School of Law",
+        "SchoolVision": "Vision of Phoe Phyu School of Law",
+        "SchoolVision-para": "“To emerge free and highly- qualified scholars in Law”",
+        "SchoolMission": "Mission of Phoe Phyu School of Law",
+        "SchoolMission-para": "“To emerge lawyers and scholars in law who are able to contribute to the good of the people and To make effort to contribute to appear the society which is fair and has the rule of law”",
+        "Strategy": "Strategy of Phoe Phyu School of Law",
+        "Strategy-para": "Attempting to make counter-balance by scholars in law and lawyers who are brilliant and keen in the sectors of legislation, judiciary and administration.",
+        "SchoolAbout": "About Our Law School",
+        "Aboutinfo": "As one of the tasks of our Law School, we provide lecturing the land law for the native, peasants and farmers whose lands were seized after going to the rural area where they live. In addition, we are making the processes of compiling the course of study for Lawyers’ Legal Practice, Land Administration, International Trade and Economy. In one hand, we are making attempt to get permission as a partner to do joint- teaching legally with the internationally acknowledged universities. On the other hand, we are also making attempts to lecture – both through online and on campus – for the master of law degree and the PhD of law degree directly conferred by the above – mentioned universities.",
+        "AboutList1": "Executive LL.M in International Trade Law and Human Rights Legal Practice",
+        "AboutList2": "Executive LL.M in International Commercial Law and Human Rights Legal Practice",
+        "AboutList3": "Executive LL.M in International Business Law and Human Rights Legal Practice",
+        "AboutList4": "Executive LL.M in Real Estate Law and Human Rights Legal Practice",
+        "AboutList5": "Executive LL.M in strategic Litigation Management and court Practice",
+        "AboutList6": "Executive LL.M in Constitutional and Administrative Law"
+    },
+
+   "LawSchoolInfo": {
+       "InfoBlog1": {
+           "InfoBlog1-Title":"The Blank of Education",
+           "InfoBlog1-para": "Teaching Law in Myanmar today is like giving much priority to pass the exam annually after attending the class regularly than learning by thinking and reasoning things regarding the Law. As for the scholars and experts in our Universities, they are not under certain condition to teach the course of study broadly, deeply and thoroughly as well as to give guidance to their students how to make self-study. Besides that the opportunity to learn the master course of law is only for those who gained good grade in the exam by parroting. That is why the possibility of studying higher education in the country like ours is an extraordinary hardship. In our country, till now, there has been no Private Law School yet, as well as no appearance of Law Institution yet which may confer any degree and title relating to the law."
+       },
+       "InfoBlog2": {
+            "InfoBlog2-Title":"Democratic Mechanism",
+            "InfoBlog2-para": "Now, it is the time when we are building our country with democratic way, one of the political means, and also the role of supreme legistative body (Hluttaw) and court of law are becoming higher appropriately, As there has been role of law commensurately, the leading roles of lawyers who are serving in the management sector of ministries and court of law are more needed among people.​In such condition, it is quite impossible to breed legal professionals if we are practicing the system in which only those who learn by heart usually pass the exam. All over the world, there is no such system in which only the stereotype –learners obtain change to learn Master of Law."
+       },
+        "InfoBlog3": {
+            "InfoBlog3-Title":"Changes in Economy Business",
+            "InfoBlog3-para": "In economic sectors, the deep water harbor in Dhawei has been constructing while those in Thilawa and Kyaut Phyu are also in running condition. In the future, Transit Trade will progress and increase. In harmony with it, it is sure that the lawyers well – versed in Trade and Economy will be more needed. At the moment, in local universities, the number of students who have been studying law are increasing higher and higher in each university. After having their graduation continual studying the master level of law still remains as a grade gap of requirement. Consequently, establishing a such law school which has received international acknowledgement has become an urgent need for our country. The scholars emerging from this school may become entrepreneur in economy, and due to their performance, It is definitely sure that there will be a grate deal of financial benefit for our country."
+        },
+        "InfoBlog4": {
+            "InfoBlog4-Title":"The Level of the School",
+            "InfoBlog4-para": "The Law School to be open in our country is necessary to be an internationally acknowledged. The method of teaching is needed to be the one which upgrades and gives support the thinking and reasoning, and also the level of degrees and titles to be acknowledged by related countries in accordance with their laws. The Degree and Titles are needed to be internationally acknowledged standards."
+        },
+        "InfoBlog5": {
+            "InfoBlog5-Title":"Method of Teaching",
+            "InfoBlog5-para": "Our Phoe Phyu School of Law has started to make an introduction of internationally standardized Law graduate class for Master Course. We have prepared the teaching of Law enough to be in connection with the necessary points for the lawyers who are serving the trade and economy in Myanma economy. During the period of study, international trade and economy standard will be taught according to the need of course and assignment. The school will take precedence over the procedures which may be implemented including similarity, dissimilarity and differences in practsing which submitting assignment and dissertation paper. The condition of being able to practice in order to match with the standard of human rights has been added."
+        },
+        "InfoBlog6": {
+            "InfoBlog6-Title":"Level of Degrees and Titles",
+            "InfoBlog6-para": "After finishing the graduate classes for master and diploma in Phoe Phyu School of Law, LL.M degree will be conferred. These degree are jointly acknowledged by St.Clemnets University, Turks, SCPU School of Business (St.Clements Private University), Switzerland, US School (The WILBER FORCE LAW CENTRE, USA)"
+        },
+        "InfoBlog7": {
+            "InfoBlog7-Title":"Making Decision",
+            "InfoBlog7-para": "Let’s make a big investment in Education from this time on. How for you have arrived is directly proportionate to how much you make an investment in Education."
+        },
+        "ProgramBlog": {
+            "ProgramBlog-Title": "Master Degree Programs of Phoe Phyu School of Law (IQY Technology College)",
+            "ProgramBlog-para": "Phoe Phyu School of Law will provide educational program of Law for diploma and master degree by joining together with Law Department of IQY Technology College which is registered in Australia Government. The IQY Technology College provides the programs of Engineering, Management, Information Technology and Vocational Skill, and also joints together with Phoe Phyu School of Law to provide Master of Law Programs. The Founder of the law school is Phoe Phyu who is a famous activist-lawyer in movements of human rights and rights for peasants and farmers. Our School takes suggestions and guidances concerning with teaching international Law from the William Wilberforce International human rights Law Centre, USA and SCPU School of Business, St. Clement University, Switzerland. In Phoe Phyu School of Law, well – experienced lawyers and scholars in law in Myanmar will teach the students in online and face to face. IQY Technology College will give support us in making assessment, amending syllabus and teaching on-line. Phoe Phyu School of Law will coach the following master degree and master diploma of law both online and in Campus.",
+            "ProgramBlogList1": "Executive LL M in International Trade Law and Human Rights Legal Practice",
+            "ProgramBlogList2": "Executive LL.M in International Commercial Law and Human Rights Legal Practice",
+            "ProgramBlogList3": "Executive LL.M in International Business Law and Human Rights Legal Practice",
+            "ProgramBlogList4": "Executive LL.M in Real Estate Law and Human Rights Legal Practice",
+            "ProgramBlogList5": "Executive LL.M in Strategic Litigation Management and Court Practice",
+            "ProgramBlogList6": "Executive LL.M in Constitutional and Administrative Law",
+            "ProgramBlog-para1": "After having achieved the diploma and master degree of law jointly conferred by Phoe Phyu School of Law and IQY Technology College, the William Wilberforce International human rights Law Centre, USA and SCPU school of Business, St. Clement University Switzerland will confer again the Master of Law degree for the related specialization. The syllabus lectured in Phoe Phyu School of Law is intended to specialize for free legal professionals, Human Rights Practitioners and Business man of lawyers (Lawyer- entrepreneurs) who will lead the Law Firm Business and besides the entrepreneurs who want to be proficient in international Economic Law. The duration of the course is twelve months; fees is $5000, installment, no other cost. A big hance to study International Master of Law Degree to pay mere USD $333 monthly. As there is scholarship program for LLB and PGDL Gradates those who attain the scholarship will have the chance to study with the rate of 20% off (USD 4,000), have to study 6 Subjects for LL.B Graduate and 9 Subjects for Non-LL.B Graduate."
+         }
+   }
+}

@@ -2,13 +2,14 @@ import React from 'react';
 import {Jumbotron as Jumbo, Container} from 'react-bootstrap';
 import styled from 'styled-components';
 import bannerimg from '../../assets/image/img3.jpg';
+import bannerimg1 from '../../assets/image/uphoephyu.jpg'
 
 const Styles =styled.div`
    .jumbo{
-       background: url(${bannerimg}) no-repeat fixed bottom;
+       background: url(${bannerimg1}) no-repeat fixed bottom;
        background-size: cover;
        color: #efefef;
-       height: 500px;
+       height: 700px;
        position: relative;
        z-index: -2;
    }
@@ -23,6 +24,12 @@ const Styles =styled.div`
        bottom: 0;
        z-index: -1;
    }
+
+   h1{
+       margin-top: 60px;
+       font-style: italic;
+       font-weight: bold;
+       color: #CED9E0;
 
   
 `;

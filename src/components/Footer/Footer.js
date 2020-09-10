@@ -1,32 +1,46 @@
 import React from 'react';
 import {Jumbotron as Jumbo, Container} from 'react-bootstrap';
+import * as Icon from 'react-bootstrap-icons';
 import styled from 'styled-components';
 
 
 const Styles = styled.div`
    .main-footer{
        background-color:#202B33;
-       margin-top: 40px;
+       margin-top: 40px; 
        color: white;
-       height: 400px;
+       padding: 100px;
    }
 
-    .container{
- 
-    }
-    
-    .row{
-       
-    }
-
     .section{
-        margin-top: 30px;
+        margin-top: 30px; 
         padding-left: 15px;
     }
 
     ul {
         list-style-type: "> ";
       }
+
+    li{
+       margin-top: 10px;
+       font-size: 18px;
+    }
+    span{
+        color:rgba(255, 255, 255, 0.3);
+        font-size: 18px;
+        font-style: italic;
+    }
+    h4{
+        margin-bottom: 20px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    .com_info{
+        font-size: 18px;
+    }
 `;
 
 export const Footer = (props) => (
@@ -34,6 +48,7 @@ export const Footer = (props) => (
     <div className="main-footer">
         <div className="container">
             <div className="row">
+                
                 {/* Column 1 */}
                 <div className="col-md-3 col-sm-6 section">
                   <h4>Significance of the Law firm</h4>
@@ -54,12 +69,16 @@ export const Footer = (props) => (
                  <div className="col-md-3 col-sm-6 section">
                         <h4>Business Hours</h4>
                         <div className="section1">
-                            <p>Opening hour:</p>
+                            <span>Opening Days:</span>
+                            <br></br>
+                            <br></br>
                             <p>Monday – Friday : 9am to 20 pm Saturday : 9am to 17 pm</p>
                         </div>
 
                         <div className="section2">
-                            <p>Vacations:</p>
+                            <span>Vacations:</span>
+                            <br></br>
+                            <br></br>
                             <p>All Sunday Days All Official Holidays</p>
                         </div>
                 </div>
@@ -67,17 +86,17 @@ export const Footer = (props) => (
                  {/* Column 4 */}
                  <div className="col-md-3 col-sm-6 section">
                   <h4>Have a Questions?</h4>
-                    <div>No 506 (5th Floor), 50th Street Condominium(B), 50th Street, 5th Ward, Botahtaung Township, Yangon</div>
+                    <div className="com_info"> <Icon.Map />  No 506 (5th Floor), 50th Street Condominium(B), 50th Street, 5th Ward, Botahtaung Township, Yangon</div>
                     <br></br>
-                    <div>09 73000 441</div>
+                    <div className="com_info"> <Icon.Telephone/>  09 73000 441</div>
                     <br></br>
-                    <div>ipleaderphoephyu@gmail.com</div>
+                    <div className="com_info"> <Icon.Envelope />   ipleaderphoephyu@gmail.com</div>
                 </div>
             </div>
             {/* Footer Bottom */}
             <div className="footer-bottom">
                 <p className="text-xs-center">
-                   &copy;{new Date().getFullYear()} MicroServices Myanmar - All right reserved
+                  &copy;{new Date().getFullYear()} MicroServices Myanmar - All right reserved
                 </p>
             </div>
         </div>

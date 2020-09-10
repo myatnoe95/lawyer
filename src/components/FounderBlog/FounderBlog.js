@@ -1,42 +1,101 @@
 import React from 'react';
-import {Card} from 'react-bootstrap';
+import {Card, Container,Row,Col,Media} from 'react-bootstrap';
+import bannerimg from '../../assets/image/img3.jpg';
 import styled from 'styled-components';
+import Moment from 'moment'
+import momentLocalizer from 'react-widgets-moment';
+import { useTranslation } from 'react-i18next';
+
+Moment.locale('en')
+momentLocalizer()
 
 const Styles = styled.div`
-   .title{
-       font-size: 30px;
-       font-weight: bold;
-   }
 
-   .about{
-      text-align: justify;
-      font-size: 18px;
-      color: #202B33;   
-   }
+
+
+ .img{
+     width:500px;
+     height: 600px; 
+     object-fit: cover;
+ }
+ p{
+    text-align: justify;
+    font-size: 20px;
+    color:#5C7080;  
+ }
+  .main{
+   background-color:#202B33;
+   margin-top: 40px; 
+   color: white;
+   padding: 100px;
+}
+
+.container{
+}
+
+ @media(max-width:480px){
+     .img{
+        width: 300px;
+        height: 250px;
+     }
+     .img{
+        width: 300px;
+        height: 250px;
+     }
+ }
 
 `;
 
-export const FounderBlog = (props) =>(
-    <Styles>
-        <Card>
-            <Card.Body>
-            <Card.Title className="title">About Founder</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted"></Card.Subtitle>
-            <Card.Text className="about">
-                Phoe Phyu is a Founder and CEO of Phoe Phyu & Associates Business. He is also an Activist Lawyer and was arrested owing to taking part in 2007 Saffron Movement. After being released, he presented the case for sangha and activists of politics and human rights who were detained during saffron movement. In addition, he carried out in the movement of labour-right and farm land ownership.
-            </Card.Text>
+export default function  FounderBlog (props) {
 
-            <Card.Title className="title">Prizes Award</Card.Title>
-            <Card.Text className="about">
-            Citizen of Burma Award in 2011 and 2012
-            </Card.Text>
+   const { t } = useTranslation();
 
-            <Card.Title className="title">Studying at present</Card.Title>
-            <Card.Text className="about">
-                After being released from prison, he was banned from studying an year law master course in Dagon University of Yangon. However, he is allowed by the University Essex,UK to take L.L.M (International Trade & Commercial Law) through Kaplan.
-            </Card.Text>
+    return(
+      <Styles>
+             <Card>
+                    <Card.Body>
+                    <Card.Title></Card.Title>
+                    <Container>
+                    <Row>
+                           <Col sm ={6}>
+                              <img src={bannerimg} className="img"></img>
+                           </Col>
+                           <Col sm={6}>
+                              <h1>{t('FounderBlog.Founder-Title')}</h1>
+                              <p>{t('FounderBlog.Founder-para')}</p>
+                              <br></br>
+                              <h1>{t('FounderBlog.Prizes-Title')}</h1>
+                              <p>{t('FounderBlog.Prizes-para')}</p>
+                              <br></br>
+                              <h1>{t('FounderBlog.Present-Title')}</h1>
+                              <p>{t('FounderBlog.Present-para')}</p>
+                           </Col>
+                     </Row>
+                    </Container>
+                    </Card.Body>
+                </Card>
 
-            </Card.Body>
-        </Card>
-    </Styles>
-)
+            {/* <Container fluid className="container">
+            <Row>
+                  <Col sm>
+                     <img src={bannerimg} className="img"></img>
+                  </Col>
+                  <Col sm>
+                     <h1>{t('FounderBlog.Founder-Title')}</h1>
+                     <p>{t('FounderBlog.Founder-para')}</p>
+                     <br></br>
+                     <h1>{t('FounderBlog.Prizes-Title')}</h1>
+                     <p>{t('FounderBlog.Prizes-para')}</p>
+                     <br></br>
+                     <h1>{t('FounderBlog.Present-Title')}</h1>
+                     <p>{t('FounderBlog.Present-para')}</p>
+                  </Col>
+            </Row>
+            </Container> */}
+       
+
+      </Styles>
+
+    )
+}
+   

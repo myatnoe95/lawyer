@@ -1,54 +1,82 @@
 import React from 'react';
-import { Nav, Navbar,NavDropdown } from 'react-bootstrap';
+import { Nav, Navbar,NavDropdown, Button } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import {mm_flag} from '../../assets/icon/myanmar.png';
-import {uk_flag} from '../../assets/icon/uk.png';
+import balance from '../../assets/icon/balance.png';
+import flag_mm from '../../assets/icon/flag-mm.jpg';
+import flag_uk from '../../assets/icon/flag-uk.jpg';
+import {BrowserRouter as Router,Route, NavLink} from 'react-router-dom';
 
+const Styles = styled.div`
+    .nav{
+        background-color: #202B33; 
+    }
+    .main-nav-active{
+        color: white;
+    }
+`;
 
-// const Styles = styled.div`
-//   .navbar{
-//       background-color: red;
-//   }
+function Navigation (){ 
 
-//   .navbar-brand, .navbar-nav .nav-link{
-//       color: white;
-//   }
+    const { t, i18n } = useTranslation();
+    const [link,setlink] = React.useState('');
 
-//   &:hover{
-//       color: white;
-//   }
-// `;
+    return(
+        <Styles>
+                <Navbar collapseOnSelect expand="lg" variant="dark" className="nav" fixed="top">
+                    <Navbar.Brand href="/"><img src={balance} alt="logo"/> PhoePhyu & Associates</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                        <Navbar.Collapse id="responsive-navbar-nav">
+                            <Nav className="mr-auto">
+                                {/* <Router>
+                                    <NavLink exact to ="/" activeClassName="main-nav-active">
+                                    {t('Header.Home')}
+                                    </NavLink>
 
-export const Navigation = () => (
+                                    <NavLink exact to ="/about_us" activeClassName="main-nav-active">
+                                    {t('Header.About Us')}
+                                    </NavLink>
+                                </Router> */}
 
-       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="/">PhoePhyu & Associates</Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="mr-auto">
-                        <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/about_us">About Us</Nav.Link>
-                        <Nav.Link href="/law_firm">Law Firm</Nav.Link>
-                        <Nav.Link href="/law_school">Law School</Nav.Link>
-                        <Nav.Link href="/news">News</Nav.Link>
-                        <Nav.Link href="/contact_us">Contact Us</Nav.Link>
-                    {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                    </NavDropdown> */}
-                    </Nav>
-                    <Nav>
-                    <Nav.Link href="/mm">
-                        MM
-                    </Nav.Link>
-                    <Nav.Link eventKey={2} href="/eng">
-                        EN
-                    </Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-</Navbar>
+                               
+                                <Nav.Link href="/" >
+                                    {t('Header.Home')}
+                                </Nav.Link>
 
-)
+                                <Nav.Link href="/about_us" >
+                                   {t('Header.About Us')}
+                                </Nav.Link>
+
+                                <Nav.Link href="/law_firm">
+                                   {t('Law Firm')}
+                                </Nav.Link>
+
+                                <Nav.Link href="/law_school" >
+                                    {t('Header.Law School')}
+                                </Nav.Link>
+
+                                <Nav.Link href="/news" >
+                                   {t('Header.News')}
+                                </Nav.Link>
+
+                                <Nav.Link href="/contact_us">
+                                    {t('Header.Contact Us')}
+                                </Nav.Link>
+                            </Nav>
+                            <Nav>
+                            <Nav.Link onClick={()=>i18n.changeLanguage('mm')}>
+                               <img src={flag_mm} alt="flag_mm"/> 
+                                {t('Header.Myanmar')}
+                            </Nav.Link>
+                            <Nav.Link eventKey={2}  onClick={()=>i18n.changeLanguage('en')}>
+                            <img src={flag_uk} alt="flag_uk"/> 
+                                {t('Header.English')}
+                            </Nav.Link>
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Navbar>
+        </Styles>
+    )
+}
+
+export default Navigation;

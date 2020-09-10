@@ -1,48 +1,60 @@
 import React from 'react';
 import {Card} from 'react-bootstrap';
 import styled from 'styled-components';
+import Moment from 'moment'
+import momentLocalizer from 'react-widgets-moment';
+import { useTranslation } from 'react-i18next';
+
+Moment.locale('en')
+momentLocalizer()
 
 const Styles = styled.div`
-   .title{
-       font-size: 35px;
-       font-weight: bold;
+   .home-info{
+    
    }
 
-   .sub_title{
-       font-size: 20px;
-       font-weight: bold;
+   .home-title{
+        font-size: 40px;
+        text-align: center;
    }
-   
-   .text{
-       margin-top: 30px;
+
+   .home-subtitle{
+        font-size: 35px;
+        text-align: center;
    }
+
 
    ul{
-     
+    color:#5C7080;
+    font-size: 25px; 
+    margin-top: 40px;
+    text-align: center;
+    list-style-type: none;
    }
 
    li{
-    font-size: 20px;
+
    }
+
+  
 
 `;
 
 export function HomeComponent(props){
+
+    const { t } = useTranslation();
+
     return(
         <Styles>
-            <Card  border="secondary" className="text-center">
-                <Card.Body>
-                    <Card.Title className="title">PhoePhyu & Associates</Card.Title>
-                    <Card.Subtitle className="sub_title"> is a private company limited which serves the following services.</Card.Subtitle>
-                    <Card.Text className="text">
-                    <ul>
-                        <li>Legal Services under the Name of Phoe Phyu & Associates Law Firm</li>
-                        <li>Writing and Publication of Books concerning with Law and Legal Processing in the name of Phoe Phyu & Associates Law Book Publication</li>
-                        <li>Teaching Law and it's realm by the name of Phoe Phyu School of Law</li>
-                    </ul>
-                    </Card.Text>
-                </Card.Body>
-            </Card>
+             <div className="home-info">
+                    <div className="home-title">{t('HomeComponent.Title')}</div>
+                      <div className="home-subtitle">{t('HomeComponent.Subtitle')}</div>
+                        <ul>
+                            <li>{t('HomeComponent.List1')}</li>
+                            <li>{t('HomeComponent.List2')}</li>
+                            <li>{t('HomeComponent.List3')}</li>
+                        </ul>
+              </div>
         </Styles>
     )
 }

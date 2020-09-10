@@ -1,10 +1,13 @@
 import React from 'react';
+import AboutLawSchool from '../../components/AboutLawSchool/AboutLawSchool';
+import LawSchoolInfo from '../../components/LawSchoolInfo/LawSchoolInfo';
+
 
 function LawSchool (props){
     return(
         <div>
-            <h1>LawSchool</h1>
-            <p>Coming Soon...</p>
+            <AboutLawSchool/>
+            <LawSchoolInfo/>
         </div>
     )
 }
