@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Nav, Navbar,NavDropdown, Button } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
@@ -14,12 +14,19 @@ const Styles = styled.div`
     .main-nav-active{
         color: white;
     }
+    .navlink{
+        padding-left: 60px;
+    }
 `;
 
 function Navigation (){ 
 
     const { t, i18n } = useTranslation();
-    const [link,setlink] = React.useState('');
+    const [actlink,setactlink] = React.useState('');
+
+    useEffect(() => {
+        setactlink(window.location.pathname)
+    });
 
     return(
         <Styles>
@@ -27,18 +34,8 @@ function Navigation (){
                     <Navbar.Brand href="/"><img src={balance} alt="logo"/> PhoePhyu & Associates</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
-                            <Nav className="mr-auto">
-                                {/* <Router>
-                                    <NavLink exact to ="/" activeClassName="main-nav-active">
-                                    {t('Header.Home')}
-                                    </NavLink>
+                            <Nav className="mr-auto navlink" activeKey={actlink}>
 
-                                    <NavLink exact to ="/about_us" activeClassName="main-nav-active">
-                                    {t('Header.About Us')}
-                                    </NavLink>
-                                </Router> */}
-
-                               
                                 <Nav.Link href="/" >
                                     {t('Header.Home')}
                                 </Nav.Link>

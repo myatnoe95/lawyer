@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React,{useEffect }from 'react';
 import { Jumbotron,Row, Col, Image, Container, Button} from 'react-bootstrap';
 import bannerimg from '../../assets/image/img3.jpg';
 import personimg from '../../assets/image/lawyer.png';
@@ -46,6 +46,10 @@ const Styles = styled.div`
   }
  
 `;
+
+// useEffect(() => {
+    
+// });
 
 
 export default function Members (props){
