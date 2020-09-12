@@ -18,7 +18,18 @@ const Styles =  styled.div`
 .law-school-sec3-h2{
     padding-bottom: 10px;
 }
+p{
+    text-align: justified;
+    font-size: 20px;
+    margin-top: 20px;
+    color:#5C7080;
+}
 
+ul{
+    color:#5C7080;
+    font-size: 20px;
+    margin-top: 30px;
+ }
 
 `;
 

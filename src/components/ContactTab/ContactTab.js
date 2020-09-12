@@ -79,11 +79,11 @@ export default class ContactTab extends React.Component{
                     <Tab eventKey={1} title="Law Firm Enquiry">
                         <div className="pic1-form1">
                             <div className="pic1">
-                                <div className="text1">
+                                {/* <div className="text1">
                                     <RiAuctionLine className="text1-icon1" size={100}/>
                                     <h1 className="text1-head1">Law Firm</h1>
                                     <h3>Enquiry</h3>           
-                                </div>
+                                </div> */}
                             </div>
                             <div className="form1">
                                 <h2 className="head1">Enquiry Form</h2>
@@ -94,11 +94,11 @@ export default class ContactTab extends React.Component{
                     <Tab eventKey={2} title="Law School Enquiry">
                         <div className="pic2-form2">
                             <div className="pic2">
-                                <div className="text2">
+                                {/* <div className="text2">
                                     <FaRegHandshake className="text2-icon2" size={100}/>
                                     <h1 className="text2-head2">Law School</h1>
                                     <h3>Enquiry</h3>
-                                </div>
+                                </div> */}
                             </div>
                             <div className="form2">
                                 <h2 className="head2">Enquiry Form</h2>
@@ -109,11 +109,11 @@ export default class ContactTab extends React.Component{
                     <Tab eventKey={3} title="Publications Order">
                         <div className="pic3-form3">
                             <div className="pic3">
-                                <div className="text3">
+                                {/* <div className="text3">
                                     <BiMedal className="text3-icon3" size={100}/>
                                     <h1 className="text3-head3">Publication</h1>
                                     <h3>Order</h3>
-                                </div>
+                                </div> */}
                             </div>
                             <div className="form3">
                                 <h2 className="head3">Enquiry Form</h2>

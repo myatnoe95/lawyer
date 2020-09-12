@@ -10,8 +10,13 @@ momentLocalizer()
 
 
 const Styles = styled.div`
+
+   .container{
+       padding: 20px 0;
+       margin-top: 0px !important;
+   }
    .services{
-       width: 60%;
+       width: 100%;
     //    margin: 50px auto;
 
    }
@@ -55,6 +60,8 @@ const Styles = styled.div`
        color:#30404D;
    }
 
+  
+
 `;
 
 export default function LegalService (props){
@@ -63,8 +70,7 @@ export default function LegalService (props){
 
          return(
              <Styles>
-            
-            <Container fluid="md">
+            <Container fluid="md" className="container">
                <div className="services">
                   <h1 className="services-title">{t('LegalService.Service.Service-Title')}</h1>
                   <p className="services-para">{t('LegalService.Service.Service-info')}</p>

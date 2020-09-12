@@ -14,8 +14,8 @@ const Styles = styled.div`
 
 
  .img{
-     width:500px;
-     height: 600px; 
+     width:100%;
+     height: auto; 
      object-fit: cover;
  }
  p{
@@ -55,7 +55,7 @@ export default function  FounderBlog (props) {
              <Card>
                     <Card.Body>
                     <Card.Title></Card.Title>
-                    <Container>
+                    <Container fluid>
                     <Row>
                            <Col sm ={6}>
                               <img src={bannerimg} className="img"></img>

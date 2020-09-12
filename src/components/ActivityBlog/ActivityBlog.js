@@ -1,6 +1,9 @@
 import React from 'react';
 import {Card, Container,Row,Col} from 'react-bootstrap';
-import bannerimg from '../../assets/image/img3.jpg';
+import Activityimg from '../../assets/image/upp.jpg';
+import Activityimg1 from '../../assets/image/upp1.jpg';
+import Activityimg2 from '../../assets/image/upp2.jpg';
+import Activityimg3 from '../../assets/image/upp3.jpg';
 import styled from 'styled-components';
 import Moment from 'moment'
 import momentLocalizer from 'react-widgets-moment';
@@ -16,9 +19,9 @@ const Styles = styled.div`
   }
 
   .img{
-      width:500px;
-      height: 600px;
-      object-fit: cover;
+    width:100%;
+    height: auto; 
+    object-fit: cover;
   }
   
   p{
@@ -49,14 +52,14 @@ export default function ActivityBlog (props) {
                 <Card className="card">
                     <Card.Body>
                     <Card.Title></Card.Title>
-                    <Container>
+                    <Container fluid>
                     <Row>
                             <Col sm>
                                 <h1>{t('ActivityBlog.Blog1.Blog-Title')}</h1>
                                 <p>{t('ActivityBlog.Blog1.Blog-para')}</p>
                             </Col>
                             <Col sm>
-                                <img src={bannerimg} className="img"></img>
+                                <img src={Activityimg} className="img"></img>
                             </Col>
                     </Row>
                     </Container>
@@ -68,7 +71,7 @@ export default function ActivityBlog (props) {
                     <Container>
                     <Row>
                             <Col sm>
-                                <img src={bannerimg} className="img"></img>
+                                <img src={Activityimg1} className="img"></img>
                             </Col>
                             <Col sm>
                                 <h1>{t('ActivityBlog.Blog2.Blog-Title')}</h1>
@@ -89,7 +92,7 @@ export default function ActivityBlog (props) {
                                 <p>{t('ActivityBlog.Blog3.Blog-para')}</p>  
                             </Col>
                             <Col sm>
-                                <img src={bannerimg} className="img"></img>
+                                <img src={Activityimg2} className="img"></img>
                             </Col>
                     </Row>
                     </Container>
@@ -101,7 +104,7 @@ export default function ActivityBlog (props) {
                     <Container>
                     <Row>
                             <Col sm>
-                                <img src={bannerimg} className="img"></img>
+                                <img src={Activityimg3} className="img"></img>
                             </Col>
                             <Col sm>
                             <h1>{t('ActivityBlog.RelatedBlog.Blog-Title')}</h1>

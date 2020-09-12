@@ -47,19 +47,21 @@ export function PracticeArea (props){
                  <Row>
                      <Col>
                      <div className="icon">
-                        <FontAwesomeIcon icon={faBriefcase}  size="5x" />
+                        <FontAwesomeIcon icon={faBriefcase} color="#20163C" size="5x" />
                      </div>
                      <div className="icon-info">{t('PracticeArea.Economy')}</div>
                      </Col>
+
                      <Col>
                      <div className="icon">
-                        <FontAwesomeIcon icon={faHome}  size="5x" />
+                        <FontAwesomeIcon icon={faHome}  color="#20163C" size="5x" />
                      </div>
                      <div className="icon-info">{t('PracticeArea.Land-disputes')}</div>
                      </Col>
+                     
                      <Col>
                      <div className="icon">
-                        <FontAwesomeIcon icon={faMoneyBill}  size="5x" />
+                        <FontAwesomeIcon icon={faMoneyBill}  color="#20163C" size="5x" />
                      </div>
                      <div className="icon-info">{t('PracticeArea.Trade')}</div>
                      </Col>

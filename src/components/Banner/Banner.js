@@ -26,7 +26,8 @@ const Styles =styled.div`
    }
 
    h1{
-       margin-top: 60px;
+       margin-top: 180px;
+       text-align: center;
        font-style: italic;
        font-weight: bold;
        color: #CED9E0;

@@ -45,7 +45,7 @@ const Styles = styled.div`
 }
 .details-img{
     width: 100%;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
 }
 /* .form{
@@ -55,6 +55,11 @@ const Styles = styled.div`
 .head{
     padding-bottom: 20px;
 } */
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1500px !important;
+    }
+   }
 `;
 
 export default class NewsDetails extends React.Component{ 
