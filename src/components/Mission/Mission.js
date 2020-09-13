@@ -28,7 +28,7 @@ const Styles = styled.div`
   }
 
   .row{
-      padding: 100px 0;
+      padding: 70px 0;
   }
 
   .business-info{

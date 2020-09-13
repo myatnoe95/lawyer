@@ -17,6 +17,10 @@ momentLocalizer()
 
 const Styles = styled.div`
 
+.member-card{
+    padding: 70px 0;
+}
+
 .jumbo{
     background: url(${lawimg});
     background-size: cover;
@@ -40,7 +44,7 @@ const Styles = styled.div`
     text-align: center;
     font-size: 22px;
     color:  #F5F8FA;
-    font-weight: bold;
+    // font-weight: bold;
   }
 
   .profile-div{
@@ -123,6 +127,7 @@ export default function Members (props){
 
         return(
             <Styles> 
+                <div className="member-card">
                 <Container fluid >
                    <Jumbotron className="jumbo">
                        <Container fluid>
@@ -266,6 +271,8 @@ export default function Members (props){
 
                    </Jumbotron>
                 </Container>
+                                    
+                </div>
                 {/* <Container fluid>
                     <Jumbotron className="jumbotron">
                         <Container fluid>

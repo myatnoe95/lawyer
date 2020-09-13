@@ -14,7 +14,15 @@ momentLocalizer()
 
 
 const Styles = styled.div`
-  .card{
+
+  .activity-title{
+    font-weight: bold;
+    text-align: center;
+    padding: 50px 0;
+    font-style: italic;
+  }
+
+  .activity-card1{
   
   }
 
@@ -35,11 +43,15 @@ const Styles = styled.div`
     margin-top: 10px;
  }
 
+
   @media(max-width:480px){
     .card img{
         width: 300px;
         height: 250px;
     }
+    .activity-title{
+        padding: 30px 0;
+      }
 }
 `;
 
@@ -49,7 +61,11 @@ export default function ActivityBlog (props) {
 
     return(
         <Styles>
-                <Card className="card">
+             <h1 className="activity-title">
+                 Our Movements / Our Activities
+            </h1>
+             
+                <Card className="activity-card1">
                     <Card.Body>
                     <Card.Title></Card.Title>
                     <Container fluid>
@@ -82,10 +98,10 @@ export default function ActivityBlog (props) {
                     </Card.Body>
                 </Card>
 
-                <Card className="card">
+                <Card className="activity-card2">
                     <Card.Body>
                     <Card.Title></Card.Title>
-                    <Container>
+                    <Container fluid>
                     <Row>
                             <Col sm>
                                 <h1>{t('ActivityBlog.Blog3.Blog-Title')}</h1>

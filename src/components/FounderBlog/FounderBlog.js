@@ -10,7 +10,19 @@ Moment.locale('en')
 momentLocalizer()
 
 const Styles = styled.div`
+  
+.founder-card{
+   background-color:#f7f9fd;
+}
 
+.blog{
+   border-left: 5px solid #dee2e6;
+   padding-left: 15px;
+}
+
+.blog-container{
+   padding: 100px 0;
+}
 
 
  .img{
@@ -33,15 +45,33 @@ const Styles = styled.div`
 .container{
 }
 
+hr{
+   width: 60px;
+   height: 3px;
+   background-color:#eac15a;
+   margin-left: 0;
+   border: none;
+}
+
  @media(max-width:480px){
      .img{
         width: 300px;
         height: 250px;
+        object-fit: cover;
      }
      .img{
         width: 300px;
         height: 250px;
      }
+     .blog{
+      border: none;
+      padding-left: 15px;
+      }
+
+      .blog-container{
+         padding: 50px 0;
+      }
+      
  }
 
 `;
@@ -52,7 +82,7 @@ export default function  FounderBlog (props) {
 
     return(
       <Styles>
-             <Card>
+             {/* <Card className="founder-card">
                     <Card.Body>
                     <Card.Title></Card.Title>
                     <Container fluid>
@@ -73,26 +103,31 @@ export default function  FounderBlog (props) {
                      </Row>
                     </Container>
                     </Card.Body>
-                </Card>
-
-            {/* <Container fluid className="container">
+                </Card> */}
+         <div className="blog-container">
+            <Container fluid>
             <Row>
                   <Col sm>
                      <img src={bannerimg} className="img"></img>
                   </Col>
                   <Col sm>
+                     <div className="blog">
                      <h1>{t('FounderBlog.Founder-Title')}</h1>
+                     <hr/>
                      <p>{t('FounderBlog.Founder-para')}</p>
                      <br></br>
                      <h1>{t('FounderBlog.Prizes-Title')}</h1>
+                     <hr/>
                      <p>{t('FounderBlog.Prizes-para')}</p>
                      <br></br>
                      <h1>{t('FounderBlog.Present-Title')}</h1>
+                     <hr/>
                      <p>{t('FounderBlog.Present-para')}</p>
+                     </div>
                   </Col>
             </Row>
-            </Container> */}
-       
+            </Container>
+            </div>
 
       </Styles>
 

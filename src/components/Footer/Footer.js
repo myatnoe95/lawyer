@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
    .main-footer{
-       background-color:#20163C;
+       background-color: #101010;
        margin-top: 40px; 
        color: white;
        padding: 100px;
@@ -47,7 +47,8 @@ const Styles = styled.div`
     }
 
     .footer{
-        background-color: #101010;
+        background-color:#20163C;
+    
         padding: 20px 0;
         color: #fff;
     }

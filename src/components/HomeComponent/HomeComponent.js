@@ -10,8 +10,12 @@ Moment.locale('en')
 momentLocalizer()
 
 const Styles = styled.div`
+   .container{
+       padding: 70px 0;
+   }
+
    .home-info{
-    
+       border-left: 5px solid #dee2e6
    }
 
    .img{   
@@ -26,9 +30,14 @@ const Styles = styled.div`
    }
 
    .home-subtitle{
+        padding-left: 20px;
         font-size: 35px;
         font-weight: bold;
         // text-align: center;
+   }
+
+   span{
+    font-size: 20px;
    }
 
 
@@ -37,13 +46,28 @@ const Styles = styled.div`
     font-size: 25px; 
     margin-top: 40px;
     text-align: start;
-    list-style-type: " > ";
+    list-style-type: square;
    }
 
    li{
 
    }
+   
+   @media(max-width: 480px){
 
+    .container{
+        padding: 0px;
+    }
+    .home-info{
+        border: none;
+    }
+    .home-subtitle{
+        padding-left: 0px;
+        font-size: 27px;
+        font-weight: bold;
+        margin-top: 20px;
+   }
+   }
   
 
 `;
@@ -56,6 +80,25 @@ export function HomeComponent(props){
         <Styles>
              <Container className="container">
                 <Row>
+                    <Col sm>
+                       <div className="greeting-para">
+                           <span>Who we are?</span>
+                           <div className="home-title">{t('HomeComponent.Title')}</div>
+                       </div>
+                    </Col>
+
+                        <Col sm>
+                          <div className="home-info">
+                                <div className="home-subtitle"> {t('HomeComponent.Subtitle')}</div> 
+                            <ul>
+                                <li>{t('HomeComponent.List1')}</li>
+                                <li>{t('HomeComponent.List2')}</li>
+                                <li>{t('HomeComponent.List3')}</li>
+                            </ul>
+                        </div>
+                        </Col>
+                    </Row>  
+                {/* <Row>
                     <Col sm>
                         <div className="home-info">
                         <div className="home-title">{t('HomeComponent.Title')}</div>
@@ -71,7 +114,7 @@ export function HomeComponent(props){
                         <Col sm>
                            <img src={bannerimg1} className="img" fluid ></img>
                         </Col>
-                    </Row>
+                    </Row> */}
                 </Container>
              {/* <div className="home-info">
                     <div className="home-title">{t('HomeComponent.Title')}</div>
