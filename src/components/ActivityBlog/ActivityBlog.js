@@ -42,6 +42,13 @@ const Styles = styled.div`
     font-size: 20px;
     margin-top: 10px;
  }
+ .line{
+    width: 60px;
+    height: 3px;
+    background-color:#eac15a;
+    margin-left: 0;
+    border: none;
+ }
 
 
   @media(max-width:480px){
@@ -52,6 +59,17 @@ const Styles = styled.div`
     .activity-title{
         padding: 30px 0;
       }
+    h1{
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    p{
+        font-size: 18px;
+    }
+    ul,li{
+        font-size: 18px;
+    }
 }
 `;
 
@@ -72,6 +90,7 @@ export default function ActivityBlog (props) {
                     <Row>
                             <Col sm>
                                 <h1>{t('ActivityBlog.Blog1.Blog-Title')}</h1>
+                                <hr className="line"/>
                                 <p>{t('ActivityBlog.Blog1.Blog-para')}</p>
                             </Col>
                             <Col sm>
@@ -91,6 +110,7 @@ export default function ActivityBlog (props) {
                             </Col>
                             <Col sm>
                                 <h1>{t('ActivityBlog.Blog2.Blog-Title')}</h1>
+                                <hr className="line"/>
                                 <p>{t('ActivityBlog.Blog2.Blog-para')}</p>
                             </Col>
                     </Row>
@@ -105,7 +125,8 @@ export default function ActivityBlog (props) {
                     <Row>
                             <Col sm>
                                 <h1>{t('ActivityBlog.Blog3.Blog-Title')}</h1>
-                                <p>{t('ActivityBlog.Blog3.Blog-para')}</p>  
+                                <hr className="line"/>
+                                <p>{t('ActivityBlog.Blog3.Blog-para')}</p>
                             </Col>
                             <Col sm>
                                 <img src={Activityimg2} className="img"></img>
@@ -123,7 +144,8 @@ export default function ActivityBlog (props) {
                                 <img src={Activityimg3} className="img"></img>
                             </Col>
                             <Col sm>
-                            <h1>{t('ActivityBlog.RelatedBlog.Blog-Title')}</h1>
+                               <h1>{t('ActivityBlog.RelatedBlog.Blog-Title')}</h1>
+                               <hr className="line"/>
                                 <p>{t('ActivityBlog.RelatedBlog.Blog-para')}</p>
                                    <ul>
                                        <li>{t('ActivityBlog.RelatedBlog.List1')}</li>

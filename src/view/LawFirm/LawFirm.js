@@ -52,6 +52,12 @@ hr{
     }
     
    }
+
+@media(max-width: 480px){
+    .business-title{
+        font-size: 32px;  
+    }
+}
 `;
 
 Moment.locale('en')

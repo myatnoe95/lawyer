@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
    .main-footer{
-       background-color: #101010;
+       background-color:#101010;
        margin-top: 40px; 
        color: white;
        padding: 100px;
@@ -47,27 +47,36 @@ const Styles = styled.div`
     }
 
     .footer{
-        background-color:#20163C;
-    
+        background-color: #101010;
         padding: 20px 0;
         color: #fff;
     }
 
-    hr{
+    .line{
         width: 60px;
         height: 3px;
         margin-bottom: 20px;
         margin-left: 0;
-        background-color:#eac15a;
+        background-color:#BF9E58;
         border: none;
+     }
+
+     hr{
+         background-color: #fff;
+         width: 100%;
      }
 
     @media (min-width: 1200px){
         .container, .container-lg, .container-md, .container-sm, .container-xl {
             max-width: 1500px !important;
         }
-        
-       }
+     }
+    @media(max-width: 480px){
+        .main-footer{
+            padding: 10px;
+        }
+     
+    }
 `;
 
 export const Footer = (props) => (
@@ -79,14 +88,14 @@ export const Footer = (props) => (
                 {/* Column 1 */}
                 <div className="col-md-3 col-sm-12 col-xs-12 section">
                   <h4>Significance of the Law firm</h4>
-                  <hr/>
+                  <hr className="line"/>
                     <p>We provide any kinds of legal Services with wide vision and reasoning all around</p>
                 </div>
 
                  {/* Column 2 */}
                  <div className="col-md-3 col-sm-12 col-xs-12 section">
                   <h4>Practice Areas</h4>
-                  <hr/>
+                  <hr className="line"/>
                   <ul className="list-unstyled">
                       <li> Economy</li>
                       <li> Land-disputes</li>
@@ -97,7 +106,7 @@ export const Footer = (props) => (
                  {/* Column 3 */}
                  <div className="col-md-3 col-sm-12 col-xs-12 section">
                         <h4>Business Hours</h4>
-                        <hr/>
+                        <hr className="line"/>
                         <div className="section1">
                             <span>Opening Days:</span>
                             <br></br>
@@ -114,10 +123,10 @@ export const Footer = (props) => (
                  {/* Column 4 */}
                  <div className="col-md-3 col-sm-12 col-xs-12 section">
                   <h4>Have a Questions?</h4>
-                  <hr/>
+                  <hr className="line"/>
                     <div className="com_info"> <Icon.Map /> &nbsp;  No 506 (5th Floor), 50th Street Condominium(B), 50th Street, 5th Ward, Botahtaung Township, Yangon</div>
                     <br></br>
-                    <div className="com_info"> <Icon.Telephone/>  &nbsp; 09 73000 441</div>
+                    <div className="com_info"> <Icon.Telephone/>  &nbsp; 09-254 051 719</div>
                     <br></br>
                     <div className="com_info"> <Icon.Envelope />  &nbsp;  ipleaderphoephyu@gmail.com</div>
                 </div>
@@ -128,7 +137,9 @@ export const Footer = (props) => (
             </div>
         </div>
     </div>
+    
     <div className="footer">
+          <hr></hr>
            <p className="text-center text">
                   &copy;{new Date().getFullYear()} MicroServices Myanmar - All right reserved
             </p>

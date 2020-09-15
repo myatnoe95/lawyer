@@ -60,17 +60,21 @@ hr{
         object-fit: cover;
      }
      .img{
-        width: 300px;
+        width: 100%;
         height: 250px;
      }
      .blog{
       border: none;
       padding-left: 15px;
+      margin-top: 20px;
       }
 
       .blog-container{
          padding: 50px 0;
       }
+
+      
+
       
  }
 

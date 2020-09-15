@@ -60,6 +60,11 @@ const Styles = styled.div`
        color:#30404D;
    }
 
+   @media(max-width: 480px){
+       .services-title{
+           font-size: 32px;
+       }
+   }
   
 
 `;

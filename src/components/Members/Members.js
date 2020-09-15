@@ -77,7 +77,10 @@ const Styles = styled.div`
      
     }
     .jumbo{
-        height: 1150px;
+        height: auto;
+    }
+    .person-info{
+       height: 150px;
     }
   }
 
@@ -94,13 +97,13 @@ export default function Members (props){
     const options = {
         margin: 10,
         responsiveClass: true,
-        nav: true,
+        // nav: true,
         dotsEach:true,
         // dots: false,
         items:3,
         loop: true,
         autoplay: true,
-        navText: ["Prev "," Next"],
+        // navText: ["Prev "," Next"],
         smartSpeed: 1000,
         responsive: {
             0: {
@@ -139,14 +142,6 @@ export default function Members (props){
 
                         <OwlCarousel
                            {...options}
-                            // className="owl-theme owlcarousel"
-                            // loop
-                            // items="3"
-                            // margin={10}
-                            // nav
-                            // dotsEach={true}
-                            // responsive={responsive}
-                           
                         >
                             <div class="item">
                               <div className="profile-div">

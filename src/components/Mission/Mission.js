@@ -29,6 +29,7 @@ const Styles = styled.div`
 
   .row{
       padding: 70px 0;
+    //   background-color: #824D9F; 
   }
 
   .business-info{
@@ -53,7 +54,7 @@ const Styles = styled.div`
   .section{
       background-color: #fff;
       padding: 50px 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,.5);
+      box-shadow: 0 0 10px rgba(0,0,0,.40);
       text-align: center;
       margin-left:15px;
       margin-right:15px;

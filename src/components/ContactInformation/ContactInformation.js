@@ -28,8 +28,20 @@ const Styles = styled.div`
 
 ul{
     list-style-type: none;
-    text-align: start
+    text-align: left;
 
+}
+
+@media(max-width: 480px){
+    ul li h5{
+       font-size: 16px !important;
+       font-weight: bold !important; 
+    
+    }
+
+    ul{
+        margin-left: -30px;
+    }
 }
 
 
@@ -45,24 +57,24 @@ export default class ContactInformation extends React.Component{
                              
                                 <ul>
                                     <li>
-                                        <h5 className="address_title"> <span><Icon.Map size={30} color="tomato"/></span> &npsb; Address : No 506 (5th Floor), 50th Street Condominium(B), 50th Street, 5th Ward, Botahtaung Township, Yangon </h5><br/>
+                                        <h5> <span><Icon.Map size={30} color="tomato"/></span>  &nbsp; No 506 (5th Floor), 50th Street Condominium(B), 50th Street, 5th Ward, Botahtaung Township, Yangon </h5> <br/>
                                         {/* <p className="address_para"> No 506 (5th Floor), 50th Street Condominium(B), 50th Street, 5th Ward, Botahtaung Township, Yangon</p> */}
                                     </li>
 
                                     <li>
-                                        <h5><span><Icon.Telephone size={30} color="#F2B824"/></span> &nbsp; Phone : 09 73000 441</h5><br/>
+                                        <h5><span><Icon.Telephone size={30} color="#F2B824"/></span> &nbsp; 09-254 051 719</h5><br/>
                                     </li>
 
                                     <li>
-                                        <h5> <span><Icon.PhoneVibrate size={30} color="#F29D49"/></span> &nbsp;  Viber/Hotline : 09 960 278 100</h5><br/>
+                                        <h5> <span><Icon.PhoneVibrate size={30} color="#F29D49"/></span> &nbsp;  09-960 278 100</h5><br/>
                                     </li>
 
                                     <li>
-                                        <h5><span><Icon.Envelope size={30} color="#96622D"/></span> &nbsp; Email : ipleaderphoephyu@gmail.com</h5><br/>
+                                        <h5><span><Icon.Envelope size={30} color="#96622D"/></span> ipleaderphoephyu@gmail.com</h5><br/>
                                     </li>
 
                                     <li>
-                                        <h5><span><Icon.Globe size={30} color="#4580E6"/></span> &nbsp; Website : www.uphoephyu.com</h5><br/>
+                                        <h5><span><Icon.Globe size={30} color="#4580E6"/></span> &nbsp; www.uphoephyu.org</h5><br/>
                                     </li>
                                 </ul>
                                 {/* <h5 className="address_title"> <span><Icon.Map size={30}/></span> Address</h5><br/>

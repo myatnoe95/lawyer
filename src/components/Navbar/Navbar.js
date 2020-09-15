@@ -5,11 +5,12 @@ import styled from 'styled-components';
 import balance from '../../assets/icon/balance.png';
 import flag_mm from '../../assets/icon/flag-mm.jpg';
 import flag_uk from '../../assets/icon/flag-uk.jpg';
+import logo from '../../assets/icon/logo.jpg';
 import {BrowserRouter as Router,Route, NavLink} from 'react-router-dom';
 
 const Styles = styled.div`
     .nav{
-        background-color: #20163C; 
+        background-color: #824D9F; 
     }
     .main-nav-active{
         color: white;
@@ -19,6 +20,24 @@ const Styles = styled.div`
     }
     .nav_{
         
+    }
+    .logo{
+        width: 40px;
+        height: 40px;
+    }
+    
+    @media(max-width: 480px){
+       .title{
+           display: none;
+       }
+       .navlink{
+        text-align: center;
+        margin-top: 18px;
+       }
+       #responsive-navbar-nav{
+           border-top: 1px solid #ddd;
+           width: 100%;
+       }
     }
 `;
 
@@ -34,7 +53,7 @@ function Navigation (){
     return(
         <Styles>
                 <Navbar collapseOnSelect expand="lg" variant="dark" className="nav" fixed="top">
-                    <Navbar.Brand href="/"><img src={balance} alt="logo"/>&nbsp;&nbsp; PhoePhyu & Associates</Navbar.Brand>
+                    <Navbar.Brand href="/"  className="navbar-brand"><img src={logo} alt="logo" className="logo"/>&nbsp;&nbsp;<span className="title"> PhoePhyu & Associates Legal Business </span></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="mx-auto navlink" activeKey={actlink}>

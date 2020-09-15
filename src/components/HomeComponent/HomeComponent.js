@@ -24,20 +24,26 @@ const Styles = styled.div`
     }
 
    .home-title{
-        font-size: 40px;
+        font-size: 30px;
         font-weight: bold;
+        margin-top: 40px;
         // text-align: center;
    }
 
    .home-subtitle{
         padding-left: 20px;
-        font-size: 35px;
+        // font-size: 35px;
         font-weight: bold;
         // text-align: center;
    }
 
    span{
     font-size: 20px;
+   }
+
+   h3{
+       font-weight: bold;
+       font-size: 27px;
    }
 
 
@@ -67,6 +73,9 @@ const Styles = styled.div`
         font-weight: bold;
         margin-top: 20px;
    }
+   .home-title{
+    font-size: 21px;
+     }
    }
   
 
@@ -82,14 +91,14 @@ export function HomeComponent(props){
                 <Row>
                     <Col sm>
                        <div className="greeting-para">
-                           <span>Who we are?</span>
+                           <h3>Who we are?</h3>
                            <div className="home-title">{t('HomeComponent.Title')}</div>
                        </div>
                     </Col>
 
                         <Col sm>
                           <div className="home-info">
-                                <div className="home-subtitle"> {t('HomeComponent.Subtitle')}</div> 
+                                <h3 className="home-subtitle"> {t('HomeComponent.Subtitle')}</h3> 
                             <ul>
                                 <li>{t('HomeComponent.List1')}</li>
                                 <li>{t('HomeComponent.List2')}</li>
@@ -116,15 +125,6 @@ export function HomeComponent(props){
                         </Col>
                     </Row> */}
                 </Container>
-             {/* <div className="home-info">
-                    <div className="home-title">{t('HomeComponent.Title')}</div>
-                      <div className="home-subtitle">{t('HomeComponent.Subtitle')}</div> 
-                        <ul>
-                            <li>{t('HomeComponent.List1')}</li>
-                            <li>{t('HomeComponent.List2')}</li>
-                            <li>{t('HomeComponent.List3')}</li>
-                        </ul>
-              </div> */}
         </Styles>
     )
 }

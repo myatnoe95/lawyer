@@ -10,6 +10,7 @@ import NotMatch from './view/NotMatch/NotMatch';
 import Layout from './components/Layout/Layout';
 import Navigation from './components/Navbar/Navbar';
 import {Jumbotron} from './components/Banner/Banner';
+import {LawSchoolBanner} from './components/LawSchoolBanner/LawSchoolBanner';
 import {Footer} from './components/Footer/Footer';
 import NewsDetails from './view/NewsDetails/NewsDetails';
 import {Container} from 'react-bootstrap';
@@ -19,7 +20,11 @@ function App() {
   return (
     <React.Fragment>
       <Navigation/>
-      <Jumbotron/>
+      {window.location.pathname === '/law_school'?
+         <LawSchoolBanner/>
+      :
+        <Jumbotron/>
+      }
       <Container fluid>
         <Router>
           <Switch>
