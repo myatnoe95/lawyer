@@ -185,7 +185,7 @@ export const LawSchoolBanner = (props)=>(
                             </Col>
 
                             <Col md={6} sm={12} xs={12}>
-                               <a href="http://www.school.uphoephyu.org/login" style={{textDecoration:"none"}}> 
+                               <a href="https://school.uphoephyu.org/login" style={{textDecoration:"none"}}> 
                                 <div className="singupbtn">
                                 <Button className="loginbtn">Login Here!</Button>  
                                 </div>

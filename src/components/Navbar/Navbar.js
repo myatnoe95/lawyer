@@ -21,14 +21,20 @@ const Styles = styled.div`
     .nav_{
         
     }
+    .title{
+        
+    }
     .logo{
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
+        margin-left:55px;
+        border:2px solid white;
     }
     
     @media(max-width: 480px){
        .title{
-           display: none;
+        //    display: none;
+        font-size:10px;
        }
        .navlink{
         text-align: center;
@@ -38,6 +44,9 @@ const Styles = styled.div`
            border-top: 1px solid #ddd;
            width: 100%;
        }
+       .logo{
+        margin-left:0px;
+        }
     }
 `;
 

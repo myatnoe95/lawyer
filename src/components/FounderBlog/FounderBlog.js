@@ -10,7 +10,11 @@ Moment.locale('en')
 momentLocalizer()
 
 const Styles = styled.div`
-  
+.img_about{
+   width: 100%;
+   height: 700px;
+   object-fit:cover;
+}
 .founder-card{
    background-color:#f7f9fd;
 }
@@ -73,6 +77,7 @@ hr{
          padding: 50px 0;
       }
 
+     
       
 
       
@@ -112,7 +117,8 @@ export default function  FounderBlog (props) {
             <Container fluid>
             <Row>
                   <Col sm>
-                     <img src={bannerimg} className="img"></img>
+                     
+                     <img src={bannerimg} className="img_about" ></img>
                   </Col>
                   <Col sm>
                      <div className="blog">
