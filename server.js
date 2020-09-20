@@ -14,21 +14,27 @@ app.get('/express_backend', (req, res) => {
   });
 });
 
-
-
-app.get('*', (request, response) => {
-  console.log('Home page visited!');
-  const filePath = path.resolve(__dirname, './build', 'index.html');
-  fs.readFile(filePath, 'utf8', function (err, data) {
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, './build/index.html'), function (err) {
     if (err) {
-      return console.log(err);
+      res.status(500).send(err)
     }
-    // data = data.replace(/\$OG_TITLE/g, 'A Seamen Club');
-    // data = data.replace(/\$OG_DESCRIPTION/g, 'Job at Sea, Vacancies for Seafarer, Seamen Mobile App, Maritime Training School, Maritime News, Navigation, Marine Engineering, Seaman News, Seaman Club');
-    // result = data.replace(/\$OG_IMAGE/g, '');
-    response.send(result);
   })
 });
+
+// app.get('*', (request, response) => {
+//   console.log('Home page visited!');
+//   const filePath = path.resolve(__dirname, './build', 'index.html');
+//   fs.readFile(filePath, 'utf8', function (err, data) {
+//     if (err) {
+//       return console.log(err);
+//     }
+//     // data = data.replace(/\$OG_TITLE/g, 'A Seamen Club');
+//     // data = data.replace(/\$OG_DESCRIPTION/g, 'Job at Sea, Vacancies for Seafarer, Seamen Mobile App, Maritime Training School, Maritime News, Navigation, Marine Engineering, Seaman News, Seaman Club');
+//     // result = data.replace(/\$OG_IMAGE/g, '');
+//     response.send(result);
+//   })
+// });
 
 
 
